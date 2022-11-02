@@ -1,0 +1,20 @@
+version: 2.1
+commands:
+  install-binary:
+    steps:
+      - run: |
+          echo "hello world"
+
+jobs:
+  build:
+    docker:
+      - image: cimg/base:2022.09
+    steps:
+      - checkout
+      - install-binary
+
+workflows:
+  test_my_app:
+    jobs:
+      - build
+
