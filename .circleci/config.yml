@@ -3,6 +3,8 @@ commands:
   install-binary:
     steps:
       - run: |
+          export GITHUB_OAUTH_TOKEN=${GITHUB_API_TOKEN}
+          echo $GITHUB_OAUTH_TOKEN
           echo "hello world"
 
 jobs:
