@@ -4,10 +4,9 @@ commands:
     steps:
       - run: |
           export GITHUB_OAUTH_TOKEN=${GITHUB_API_TOKEN}
-          echo $?
           echo $GITHUB_OAUTH_TOKEN
-          echo $?
-          echo "hello world"
+          wget --version
+
 
 jobs:
   build:
