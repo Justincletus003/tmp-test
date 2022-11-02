@@ -5,8 +5,8 @@ commands:
       - run: |
           export GITHUB_OAUTH_TOKEN=${GITHUB_API_TOKEN}
           echo $GITHUB_OAUTH_TOKEN
-          wget https://github.com/gruntwork-io/fetch/releases/download/v0.4.5/fetch_linux_amd64 /tmp
-          ls -al /tmp/
+          wget https://github.com/gruntwork-io/fetch/releases/download/v0.4.5/fetch_linux_amd64
+          ls -al
 
 
 
