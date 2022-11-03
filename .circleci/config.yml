@@ -8,6 +8,13 @@ commands:
           wget https://github.com/gruntwork-io/fetch/releases/download/v0.4.5/fetch_linux_amd64
           chmod +x fetch_linux_amd64
           ./fetch_linux_amd64 -h
+          ls -l
+          pwd
+          cd function
+          ls -l
+          cd -
+          pwd                  
+
 
 
 
@@ -15,6 +22,7 @@ jobs:
   build:
     docker:
       - image: cimg/base:2022.09
+    working_directory: ~/project
     steps:
       - checkout
       - install-binary
