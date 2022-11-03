@@ -12,7 +12,8 @@ commands:
           pwd
           cd function
           ls -l
-          cd -
+          cd ../
+          ls -l
           pwd                  
 
 
